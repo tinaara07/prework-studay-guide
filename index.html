@@ -117,5 +117,11 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script>
+      const topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+      const suggestionElement = document.createElement('p');
+      suggestionElement.textContent = `You should study ${topics[Math.floor(Math.random() * topics.length)]} first.`;
+      document.querySelector('footer').appendChild(suggestionElement);
+    </script>
   </body>
 </html>
